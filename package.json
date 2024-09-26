@@ -1,16 +1,12 @@
 {
 	"name": "@alan404/minecraft-assets",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"author": "alan404",
 	"repository": "https://github.com/TheAlan404/minecraft-assets-ts",
 	"main": "dist/src/index.js",
 	"types": "dist/src/index.d.ts",
-	"exports": {
-		"./data": "./data"
-	},
 	"files": [
-		"/dist",
-		"/data"
+		"/dist"
 	],
 	"scripts": {
 		"build": "tsc"
