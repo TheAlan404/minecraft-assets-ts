@@ -14,6 +14,6 @@ export type MCBlockStateVariant = {
 export type MCBlockStateCaseState = Record<string, string>;
 
 export type MCBlockStateCase = {
-    when?: { OR: MCBlockStateCaseState[] } | { AND: MCBlockStateCaseState[] } | MCBlockStateCaseState;
+    when?: { OR: MCBlockStateCaseState[] } | { AND: MCBlockStateCaseState[] } | Omit<MCBlockStateCaseState, "OR" | "AND">;
     apply: MCBlockStateVariantList;
 };
